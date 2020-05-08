@@ -227,6 +227,7 @@ console.log(isDesigner);
 // objects and properties
 
 //object lietral
+/*
 var john = {
     firstName:'John',
     lastName: 'Smith',
@@ -252,3 +253,20 @@ jane.firstname='Jane';
 jane.birthYear=1998;
 jane['lastName']='smith';
 console.log(jane);
+
+*/
+
+var john = {
+    firstName:'John',
+    lastName: 'Smith',
+    birthYear: 1989,
+    family: ['Jane', 'Mark', 'Bob'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function(){
+        this.age= 2020-this.birthYear;
+    }
+};
+
+john.calcAge();
+console.log(john);
