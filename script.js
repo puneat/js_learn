@@ -143,10 +143,11 @@ else
 */
 
 // functions
+/*
 function calculateAge(birthYear)
 {
     return 2020-birthYear;
-}
+}*/
 /*
 var ageJohn=calculateAge(1990);
 var ageMike=calculateAge(1969);
@@ -190,7 +191,7 @@ console.log(whatDoYouDo('teacher','Puneet'));
 */
 
 // arrays
-
+/*
 var names=['John','Mark','Jane'];
 var years =  new Array(1990,1969,1989);
 
@@ -220,3 +221,52 @@ console.log(john.indexOf(13));
 
 var isDesigner = john.indexOf('john')===-1 ? 'not a designer' : 'is a designer';
 console.log(isDesigner);
+
+*/
+
+// objects and properties
+
+//object lietral
+/*
+var john = {
+    firstName:'John',
+    lastName: 'Smith',
+    birthYear: 1999,
+    family: ['Jane', 'Mark', 'Bob'],
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.firstName);
+console.log(john['lastName']);
+var x='birthYear';
+console.log(john[x]);
+
+john.job='driver';
+john['isMarried']=true;
+console.log(john);
+
+//new object syntax
+
+var jane = new Object();
+jane.firstname='Jane';
+jane.birthYear=1998;
+jane['lastName']='smith';
+console.log(jane);
+
+*/
+
+var john = {
+    firstName:'John',
+    lastName: 'Smith',
+    birthYear: 1989,
+    family: ['Jane', 'Mark', 'Bob'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function(){
+        this.age= 2020-this.birthYear;
+    }
+};
+
+john.calcAge();
+console.log(john);
