@@ -48,6 +48,7 @@ console.log(firstName+' '+lastName);
 */
 
 // operators
+/*
 var year, yearPuneet, yearPunit;
 year=2020;
 var agePunit=20;
@@ -71,4 +72,55 @@ console.log(typeof whoIsOlder);
 console.log(typeof agePuneet);
 console.log(typeof 'hello')
 var x;
-console.log(typeof x);
+console.log(typeof x); */
+
+//operator precedence
+/*
+var now=2020;
+var yearPuneet=1999;
+var fullAge=22;
+
+var isFullAge=now-yearPuneet>=fullAge;
+console.log(isFullAge);
+*/
+/*
+var firstName='puneet';
+var civilStatus=true;
+var engaged=true;
+
+if(civilStatus)
+{
+    console.log(firstName+' is married.');
+}
+else if(!civilStatus && engaged)
+{
+    console.log(firstName+' is engaged ');
+}
+else
+{
+    console.log(firstName+' is not married.');
+}
+*/
+
+//ternary operator and switch statements
+
+var firstName='puneet';
+var age=24;
+
+age>=21 ? console.log('Alcohol'):console.log('Juice')
+
+var drink=age>=21 ?'drink is alcohol':'drink is juice';
+console.log(drink);
+
+// switch statement
+
+var job='driver';
+
+switch(job){
+    case 'teacher':
+        console.log(job); break;
+    case 'driver':
+        console.log(job); break;
+    default:
+        console.log('unemployed');
+}
