@@ -101,7 +101,7 @@ else
     console.log(firstName+' is not married.');
 }
 */
-
+/*
 //ternary operator and switch statements
 
 var firstName='puneet';
@@ -124,3 +124,20 @@ switch(job){
     default:
         console.log('unemployed');
 }
+*/
+
+// falsy values: undefined, null,0,'',NaN
+//truthy values: NOT falsy values
+/*
+var height='false';
+
+if(height==false)
+{
+    console.log('variable is defined');
+}
+else 
+{
+    console.log('variable has not been defined');
+}
+
+*/
