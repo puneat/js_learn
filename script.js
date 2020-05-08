@@ -143,12 +143,11 @@ else
 */
 
 // functions
-
 function calculateAge(birthYear)
 {
     return 2020-birthYear;
 }
-
+/*
 var ageJohn=calculateAge(1990);
 var ageMike=calculateAge(1969);
 var agePuneet=calculateAge(1999);
@@ -163,3 +162,27 @@ function YearsUntilRetirement(firstName, birthYear)
 YearsUntilRetirement('Puneet',1999);
 YearsUntilRetirement('Mike',1969);
 var tea= YearsUntilRetirement('John',1990);
+
+*/
+
+// function statements and expressions
+
+//function declaration
+//function whatDoYouDO(job, firstName){}
+
+
+// function expression
+var whatDoYouDo = function (job, firstName)
+{
+    switch(job)
+    {
+        case 'teacher':
+            return firstName+' teaches how to kid';
+        case 'driver':
+            return firstName+' drives a cab';
+        default:
+            return firstName +' is unemployed';
+    }
+}
+
+console.log(whatDoYouDo('teacher','Puneet'));
