@@ -141,3 +141,25 @@ else
 }
 
 */
+
+// functions
+
+function calculateAge(birthYear)
+{
+    return 2020-birthYear;
+}
+
+var ageJohn=calculateAge(1990);
+var ageMike=calculateAge(1969);
+var agePuneet=calculateAge(1999);
+console.log(ageJohn,agePuneet,ageMike);
+
+function YearsUntilRetirement(firstName, birthYear)
+{
+    var age=calculateAge(birthYear);
+    console.log(firstName+' has '+(60-age)+' until retirement.');
+}
+
+YearsUntilRetirement('Puneet',1999);
+YearsUntilRetirement('Mike',1969);
+var tea= YearsUntilRetirement('John',1990);
