@@ -170,7 +170,7 @@ var tea= YearsUntilRetirement('John',1990);
 //function declaration
 //function whatDoYouDO(job, firstName){}
 
-
+/*
 // function expression
 var whatDoYouDo = function (job, firstName)
 {
@@ -186,3 +186,37 @@ var whatDoYouDo = function (job, firstName)
 }
 
 console.log(whatDoYouDo('teacher','Puneet'));
+
+*/
+
+// arrays
+
+var names=['John','Mark','Jane'];
+var years =  new Array(1990,1969,1989);
+
+console.log(names);
+console.log(names[2]);
+
+
+names[5]='Mary';
+console.log(names);
+
+names[names.length-4]='Puneet';
+
+console.log(names);
+
+var john=['john', 1990, false];
+
+console.log(john);
+
+john.push('blue');
+console.log(john);
+console.log(john.pop());
+console.log(john);
+john.unshift('Mr.');
+console.log(john);
+
+console.log(john.indexOf(13));
+
+var isDesigner = john.indexOf('john')===-1 ? 'not a designer' : 'is a designer';
+console.log(isDesigner);
