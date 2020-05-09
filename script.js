@@ -301,7 +301,7 @@ while(i<john.length)
 */
 // continue and break statements
 
-var john=['John','smith',1990,'designer',false];
+/*var john=['John','smith',1990,'designer',false];
 john.push('blue');
 
 for(i=john.length-1;i>=0;i--)
@@ -315,4 +315,30 @@ for(i=0;i<john.length;i++)
     if(typeof john[i]!=='string') break;
     console.log(john[i]);
 }
+*/
+// Hoisting
+
+//retirement(1965);
+
+var retirement = function (year)
+{
+    console.log(65-(2016-year));
+}
+
+retirement(1990);
+
+// variables
+console.log(age);
+var age=23;
+console.log(age);
+
+function foo()
+{   console.log(age);
+    var age=65;
+    console.log(age);
+}
+
+foo();
+
+console.log(age);
 
