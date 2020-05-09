@@ -343,7 +343,7 @@ foo();
 console.log(age);
 
 */
-
+/*
 //SCOPING
 var a='',b='',c='', d='';
 var a ='Hello!';
@@ -368,3 +368,43 @@ function third()
     var d='Puneet';
     console.log(a+b+c+d);
 }
+
+*/
+/*
+calculateAge(1985);
+
+function calculateAge(year)
+{
+    console.log(2016-year);
+    console.log(this);
+}
+*/
+var john=
+{
+    name: 'John',
+    yearofBirth: 1985,
+    calculateAge : function()
+    {
+        console.log(this);
+        console.log(2016-this.yearofBirth)
+
+        function innerFunction()
+        {
+            console.log(this);
+        }
+        innerFunction();
+
+        }
+    };
+
+
+john.calculateAge();
+
+var mike={
+    name:'Mike',
+    yearofBirth: 1964
+};
+
+mike.calculateAge=john.calculateAge;
+
+mike.calculateAge();
