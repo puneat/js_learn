@@ -1,6 +1,6 @@
 /********** 
 var firstName = 'john';
-
+// @ts-nocheck
 console.log(firstName);
 
 var lastName ='Mishra';
@@ -319,7 +319,7 @@ for(i=0;i<john.length;i++)
 // Hoisting
 
 //retirement(1965);
-
+/*
 var retirement = function (year)
 {
     console.log(65-(2016-year));
@@ -342,3 +342,69 @@ foo();
 
 console.log(age);
 
+*/
+/*
+//SCOPING
+var a='',b='',c='', d='';
+var a ='Hello!';
+
+first();
+console.log(a+b+c+d);
+function first(){
+    var b ='Hi!';
+    
+    second();
+    console.log(a+b+c+d);
+    function second() {
+        var c='Hey!';
+        third();
+        console.log(a+b+c+d);
+        
+    }
+}
+
+function third()
+{
+    var d='Puneet';
+    console.log(a+b+c+d);
+}
+
+*/
+/*
+calculateAge(1985);
+
+function calculateAge(year)
+{
+    console.log(2016-year);
+    console.log(this);
+}
+*/
+var john=
+{
+    name: 'John',
+    yearofBirth: 1985,
+    calculateAge : function()
+    {
+        console.log(this);
+        console.log(2016-this.yearofBirth)
+
+        function innerFunction()
+        {
+            console.log(this);
+        }
+        innerFunction();
+
+        }
+    };
+
+
+john.calculateAge();
+
+var mike={
+    name:'Mike',
+    yearofBirth: 1964
+};
+
+mike.calculateAge=john.calculateAge;
+
+mike.calculateAge();
