@@ -1,6 +1,6 @@
 /********** 
 var firstName = 'john';
-
+// @ts-nocheck
 console.log(firstName);
 
 var lastName ='Mishra';
@@ -319,7 +319,7 @@ for(i=0;i<john.length;i++)
 // Hoisting
 
 //retirement(1965);
-
+/*
 var retirement = function (year)
 {
     console.log(65-(2016-year));
@@ -342,3 +342,29 @@ foo();
 
 console.log(age);
 
+*/
+
+//SCOPING
+var a='',b='',c='', d='';
+var a ='Hello!';
+
+first();
+console.log(a+b+c+d);
+function first(){
+    var b ='Hi!';
+    
+    second();
+    console.log(a+b+c+d);
+    function second() {
+        var c='Hey!';
+        third();
+        console.log(a+b+c+d);
+        
+    }
+}
+
+function third()
+{
+    var d='Puneet';
+    console.log(a+b+c+d);
+}
